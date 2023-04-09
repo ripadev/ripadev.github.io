@@ -1,18 +1,18 @@
 <div>
   {% include batasdalam.html %}
-    <div class="input-group bg-dark text-light rounded-top ">
+    <div class="input-group rounded-top bg-light">
       <div class="input-group-prepend">
 
-        <span class="input-group-text bg-dark border-0 text-light" ><b>grep ></b></span>
+        <span class="input-group-text border-0 bg-light" ><b>grep ></b></span>
       </div>
-    <input class="form-control border-0 bg-dark text-light" style="outline: none; box-shadow: none;" id="filter-search" type="text" placeholder="Cari disini">
+    <input class="form-control border-0 bg-light text-dark" style="outline: none; box-shadow: none;" id="filter-search" type="text" placeholder="Cari disini">
     </div>
 
-    <div class="bg-dark rounded-bottom">
-        <ul class="list-group" id="filter-list" style="display:none; list-style: none;">
+    <div class="rounded-bottom bg-light">
+        <ul class="list-group" id="filter-list" style="display:none; list-style: none; font-size: large;">
             {% for post in site.posts %}
               <li class="filter">
-                <a class="ml-2 text-info" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="ml-2 main-color-font" href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endfor %}
         </ul>

@@ -1,0 +1,62 @@
+.desc {
+    display: none;
+  }
+  
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  
+  .my-custom-margin {
+    margin-bottom: 5rem;
+  }
+
+.light-shades {
+    background-color: #DEF2EF;
+}
+
+.light-shades-font {
+    color: #DEF2EF;
+}
+
+.light-accent {
+    background-color: #447B74;
+}
+
+.light-accent-font {
+    color: #447B74;
+}
+
+.main-color {
+    background-color: #1793D1;
+}
+
+.main-color-font {
+    color: #1793D1;
+}
+
+.dark-accent {
+    background-color: #9E5548;
+}
+
+.dark-accent-font {
+    color: #9E5548;
+}
+
+.dark-shades {
+    background-color: #3F5B54;
+}
+
+.dark-shades {
+    background-color: #3F5B54;
+}
+
+a.main-color-font:hover {
+    color: #6796BB;
+}
+
+.bg-white{
+    background-color: white;
+}

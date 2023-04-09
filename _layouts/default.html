@@ -3,17 +3,19 @@
   {% include head.html %}
   {% include script.html %}
   
-  <body class="prevent-select bg-light" style="font-family: 'Poppins';font-size: 22px; color: #472b26;">
+  <body class="prevent-select bg-light" style="font-family: 'Poppins'; font-size: 22px; ">
   <!-- Div untuk judul setiap page -->
-  <div class="container rounded mb-6" style="background-color: cadetblue;">
-    <div class="container mt-2">
-      <h1 style="text-align: center;"><b>{{ page.title }}</b></h1>
-    </div>
-  
-    <div class="container rounded" style="background-color: white;">
-        {{ content }}
-      </div>
+  <div class="container rounded mb-6 bg-white border ">
     {% include batasdalam.html %}
+    <div class="main-color rounded">
+      <div class="container text-light rounded-top bg-dark">
+        <h1 style="text-align: center;"><b>Riparuk Archive</b></h1>
+      </div>
+    
+      <div class="container rounded-bottom bg-white ">
+          {{ content }}
+        </div>
+    </div>
   
   </div>
   <!-- End Div untuk judul setiap pages -->

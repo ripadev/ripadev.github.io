@@ -2,8 +2,11 @@
 layout: post
 author: jill
 categories: [IT, Linux]
+description: "in the genus Malus. The tree originated in Central Asia, where
+its wild ancestor, Malus sieversii, is still found today. Apples have
+been grown for thousands of years"
 ---
-An apple is a sweet, edible fruit produced by an apple tree.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequuntur voluptatibus provident voluptatem ut nihil similique, impedit officia iusto nemo, ipsa rerum, repellendus et quo deserunt eos laudantium obcaecati porro placeat velit nisi facilis recusandae. Facere ducimus enim odit nulla.
 
 Apple trees are cultivated worldwide, and are the most widely grown
 species in the genus Malus. The tree originated in Central Asia, where
