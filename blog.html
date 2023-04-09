@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: default
 title: Blog
 ---
-SSS
 <ul class="list-group list-group-flush">
   {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
@@ -11,7 +10,7 @@ SSS
   <li class="h3 mt-3" style="list-style: none;" id="y{{currentdate}}">{{ currentdate }}</li>
   {% assign date = currentdate %} 
   {% endif %}
-    <li  onclick="toggleDesc(this)" style="list-style-type: circle;">
+    <li  onclick="toggleDesc(this)" style="list-style: none;">
       <p class="list-group-item d-flex justify-content-between align-items-center">{{ post.title }}
         <span>
           {% for category in post.categories %}
@@ -39,10 +38,8 @@ SSS
     var desc = element.nextElementSibling;
   
     if (desc.style.display === "none") {
-      element.style.listStyleType = "disc";
       desc.style.display = "block";
     } else {
-      element.style.listStyleType = "circle";
       desc.style.display = "none";
     }
   }

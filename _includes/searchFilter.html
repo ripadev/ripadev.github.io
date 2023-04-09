@@ -1,5 +1,6 @@
 <div>
-    <div class="input-group bg-dark text-light rounded-top">
+  {% include batasdalam.html %}
+    <div class="input-group bg-dark text-light rounded-top ">
       <div class="input-group-prepend">
 
         <span class="input-group-text bg-dark border-0 text-light" ><b>grep ></b></span>
@@ -10,10 +11,33 @@
     <div class="bg-dark rounded-bottom">
         <ul class="list-group" id="filter-list" style="display:none; list-style: none;">
             {% for post in site.posts %}
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endfor %}
         </ul>
     </div>
 </div>
+
+<script>
+  const filterList = document.querySelector("#filter-list");
+  const filterSearch = document.querySelector("#filter-search");
+  const filters = document.querySelectorAll(".filter");
+
+  filterSearch.addEventListener("input", function() {
+    const searchTerm = filterSearch.value.toLowerCase();
+    if (searchTerm.length > 0) {
+      filterList.style.display = "block";
+    } else {
+      filterList.style.display = "none";
+    }
+    filters.forEach(filter => {
+      const filterText = filter.textContent.toLowerCase();
+      if (filterText.includes(searchTerm)) {
+        filter.style.display = "block";
+      } else {
+        filter.style.display = "none";
+      }
+    });
+  });
+</script>

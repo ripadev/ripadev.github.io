@@ -19,14 +19,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
   <body class="prevent-select bg-light" style="font-family: 'Poppins';font-size: 22px; color: #472b26;">
+  <!-- Div untuk judul setiap page -->
   <div class="container rounded mb-6" style="background-color: cadetblue;">
     <div class="container mt-2">
-      <h1 style="text-align: center; "><b>Riparuk Archive</b></h1>
+      <h1 style="text-align: center;"><b>Riparuk Archive</b></h1>
     </div>
   
-    <div class="container-fluid rounded" style="background-color: white;">
-      <div>
-    <div class="input-group bg-dark text-light rounded-top">
+    <div class="container rounded" style="background-color: white;">
+        <div>
+  <div style="font-size: 5px;">
+    &nbsp;
+  </div>
+    <div class="input-group bg-dark text-light rounded-top ">
       <div class="input-group-prepend">
 
         <span class="input-group-text bg-dark border-0 text-light" ><b>grep ></b></span>
@@ -37,29 +41,53 @@
     <div class="bg-dark rounded-bottom">
         <ul class="list-group" id="filter-list" style="display:none; list-style: none;">
             
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="/it/2023/01/04/Susah-Belajar.html">Susah Belajar</a>
               </li>
             
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="/2023/01/03/Makan-Ayam.html">Makan Ayam</a>
               </li>
             
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="/linux/2023/01/03/Duren-Manis.html">Duren Manis</a>
               </li>
             
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="/it/linux/2023/01/02/Apel-Masak.html">Apel Masak</a>
               </li>
             
-              <li >
+              <li class="filter">
                 <a class="ml-2 text-info" href="/linux/2022/01/04/Iphone-Keren.html">Iphone Keren</a>
               </li>
             
         </ul>
     </div>
 </div>
+
+<script>
+  const filterList = document.querySelector("#filter-list");
+  const filterSearch = document.querySelector("#filter-search");
+  const filters = document.querySelectorAll(".filter");
+
+  filterSearch.addEventListener("input", function() {
+    const searchTerm = filterSearch.value.toLowerCase();
+    if (searchTerm.length > 0) {
+      filterList.style.display = "block";
+    } else {
+      filterList.style.display = "none";
+    }
+    filters.forEach(filter => {
+      const filterText = filter.textContent.toLowerCase();
+      if (filterText.includes(searchTerm)) {
+        filter.style.display = "block";
+      } else {
+        filter.style.display = "none";
+      }
+    });
+  });
+</script>
+
   
 <div class="container mt-3">
   <h6>Latest Posts</h6>
@@ -79,39 +107,23 @@
     
   </ul>
 </div>
-<script>
-    const filterList = document.querySelector("#filter-list");
-    const filterSearch = document.querySelector("#filter-search");
-    const filters = document.querySelectorAll(".filter");
-  
-    filterSearch.addEventListener("input", function() {
-      const searchTerm = filterSearch.value.toLowerCase();
-      if (searchTerm.length > 0) {
-        filterList.style.display = "block";
-      } else {
-        filterList.style.display = "none";
-      }
-      filters.forEach(filter => {
-        const filterText = filter.textContent.toLowerCase();
-        if (filterText.includes(searchTerm)) {
-          filter.style.display = "block";
-        } else {
-          filter.style.display = "none";
-        }
-      });
-    });
-  </script>
-  
 
 
-    </div>
+
+      </div>
+    <div style="font-size: 5px;">
+    &nbsp;
+  </div>
   
   </div>
+  <!-- End Div untuk judul setiap pages -->
 
+  <!-- Batas untuk navbar -->
   <div class="my-custom-margin"></div>
 
   <div class="fixed-bottom">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <label class="navbar-brand" >Navbar</label>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
