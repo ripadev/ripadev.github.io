@@ -1,0 +1,17 @@
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li onclick="changeListStyle(event)">Item 4</li>
+  <li>Item 5</li>
+</ul>
+
+<script>
+function changeListStyle(event) {
+  // Mendapatkan elemen yang memicu event
+  var currentElement = event.currentTarget;
+
+  // Mengubah gaya tampilan list
+  currentElement.style.listStyleType = "circle";
+}
+</script>

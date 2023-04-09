@@ -1,0 +1,8 @@
+<div class="container mt-3">
+  <h6>Latest Posts</h6>
+  <ul>
+    {% for post in site.posts limit:3 %}
+      {% include listPost.html %}
+    {% endfor %}
+  </ul>
+</div>

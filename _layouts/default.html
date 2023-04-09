@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  {% include script.html %}
+  
+  <body class="prevent-select bg-light" style="font-family: 'Poppins';font-size: 22px; color: #472b26;">
+  <div class="container rounded mb-6" style="background-color: cadetblue;">
+    <div class="container mt-2">
+      <h1 style="text-align: center; "><b>{{ page.title }}</b></h1>
+    </div>
+  
+    <div class="container-fluid rounded" style="background-color: white;">
+      {{ content }}
+    </div>
+  
+  </div>
+
+  <div class="my-custom-margin"></div>
+
+  <div class="fixed-bottom">
+    {% include navbar.html %}
+  </div>
+
+  </body>
+</html>
