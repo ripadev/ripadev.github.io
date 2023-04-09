@@ -60,4 +60,9 @@ a.main-color-font:hover {
   background-color: white;
 }
 
+a.none:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
