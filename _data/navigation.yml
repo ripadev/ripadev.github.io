@@ -1,8 +1,4 @@
 - name: Home
   link: /
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
-- name: Fitur
-  link: fitur.html
+- name: Posts
+  link: /posts.html

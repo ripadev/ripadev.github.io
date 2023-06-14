@@ -1,0 +1,21 @@
+---
+layout: default
+title: Riparuk Archive | Posts
+---
+
+{% include searchFilter.html %}
+
+<div class="container mt-3">
+  <h6>All Posts</h6>
+  <ul class="light-accent-font">
+    {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+  <!-- Di grup by Year -->
+      <li class="h6 mt-3 mb-1 text-dark" style="list-style: none;" id="y{{currentdate}}"><b>{{ currentdate }}</b></li>
+      {% assign date = currentdate %} 
+      {% endif %}
+      {% include listPost.html %}
+    {% endfor %}
+  </ul>
+</div>

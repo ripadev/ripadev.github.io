@@ -3,11 +3,13 @@ layout: default
 ---
 {% include batasdalam.html %}
 <p>{{ page.date | date_to_string }}</p>
-<div class="container bg-light border">
-    {% include batasdalam.html %}
-    <h3 class="text-dark"><b>{{ page.title }}</b></h3>
+<div style="font-size: 14px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <div class="container bg-light border">
+        {% include batasdalam.html %}
+        <h4 class="text-dark"><b>{{ page.title }}</b></h4>
+        <hr>
+        <p>{{ page.excerpt }}</p>
+    </div>
     <hr>
-    <p>{{ page.excerpt }}</p>
+        {{ content }}
 </div>
-<hr>
-{{ content }}
