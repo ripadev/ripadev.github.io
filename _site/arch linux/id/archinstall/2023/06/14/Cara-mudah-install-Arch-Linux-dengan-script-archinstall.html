@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    <title>Cara Mudah Install Arch Linux Dengan Script Archinstall | Riparuk Archive</title>
+    <meta name="description" content="Di artikel ini kita akan bahas cara install Arch Linux tanpa manual/cara tradisional seperti yang sering digunakan orang-orang, tetapi kita akan menggunakan cara yang sangat sederhana hanya dengan menggunakan script archinstall kita dapat menghemat waktu untuk instalasinya, category: Arch Linux, id, archinstall">
+  </head>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <body class="prevent-select bg-light" style="font-family: 'Poppins'; font-size: 22px; ">
+  <!-- Div untuk judul setiap page -->
+  <div class="container rounded mb-6 bg-white border ">
+    <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+    <div class="main-color rounded">
+      <div class="container text-light rounded-top bg-dark">
+        <h1 style="text-align: center;">
+          <a class="text-light none" href="/"><b>Riparuk Archive</b></a>
+        </h1>
+      </div>
+    
+      <div class="container rounded-bottom bg-white ">
+          <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+<p>14 Jun 2023</p>
+<div style="font-size: 14px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <div class="container bg-light border">
+        <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+        <h4 class="text-dark"><b>Cara Mudah Install Arch Linux Dengan Script Archinstall</b></h4>
+        <hr>
+        <p>Di postingan kali ini kita akan bahas cara install Arch Linux tanpa manual/cara tradisional seperti yang sering digunakan orang-orang, tetapi kita akan menggunakan cara yang sangat sederhana hanya dengan menggunakan script archinstall kita dapat menghemat waktu untuk instalasinya</p>
+    </div>
+    <hr>
+        <p>Arch Linux adalah salah satu distro linux yang paling populer dan keunggulannya menurut saya adalah <a href="https://wiki.archlinux.org/title/Arch_User_Repository">aur</a> yang dimilikinya dan kelengkapan dari <a href="https://wiki.archlinux.org/">wiki</a> nya sendiri, hampir semua hal sudah ada di wikinya mulai dari cara configurasi, instalasi, tips, dan sebagainya menjadi keunggulan dari Arch Linux itu sendiri.</p>
+
+<p>Saya dulu termasuk orang yang sering mencoba beberapa varian dari Linux, disana ada linux mint, LXDE, XFCE, macem-macem lah, dan yang terakhir sampai saat artikel ini ditulis saya jatuh cinta sama <strong>Arch Linux</strong> xD.</p>
+
+<p>Namun, ada satu kondisi yang membuat saya merasa malas adalah instalasi dari Arch Linux sendiri yang menurut saya <strong>sangat ribet</strong>, banyak hal yang perlu kita configurasi, mulai dari persiapan partisi, format ini itu, set ini itu, yang menurut saya lumayan menyita banyak waktu.</p>
+
+<p>Taklama setelah itu, saya menemukan sebuah cara yang sangat mudah untuk install Arch Linux, tidak perlu manual lagi, yaitu hanya dengan menggunakan script <a href="https://github.com/archlinux/archinstall">archinstall</a>.</p>
+
+<p>Archinstall adalah skrip yang ada dalam distribusi Arch Linux yang bertujuan untuk memudahkan proses instalasi sistem operasi Arch Linux. Skrip ini menyediakan antarmuka yang lebih sederhana dan terstruktur untuk mengatur partisi, menginstal paket-paket, mengatur pengaturan dasar, dan konfigurasi lainnya yang diperlukan saat menginstal Arch Linux.</p>
+
+<p>Dengan menggunakan skrip archinstall, kita dapat melakukan instalasi Arch Linux dengan lebih cepat dan efisien tanpa harus melakukan semua langkah secara manual. Skrip ini menyediakan opsi-opsi yang dapat dikonfigurasi untuk menyesuaikan instalasi sesuai dengan kebutuhan pengguna.</p>
+
+<p>Caranya cukup mudah,</p>
+<ul>
+  <li><strong>Pertama</strong> pastikan setelah masuk ke boot Arch Linuxnya(bisa melalui flashdisk, atau semacamnya), koneksikan ke jaringan bisa wifi seperti menggunakan <a href="https://wiki.archlinux.org/title/iwd">iwctl</a> atau ethernet. Karena nantinya kita membutuhkan akses internet untuk mendownload package-package yang dibutuhkan saat instalasi, untuk cara lebih lengkapnya teman-teman bisa cari sendiri seperti <a href="https://wiki.archlinux.org/title/iwd">disini</a>, youtube, atau artikel favorite teman-teman.</li>
+  <li>Setelah dapat terhubung ke Internet, kita bisa langsung menjalankan perintah <strong>archinstall</strong> di cli arch linux nya.</li>
+</ul>
+
+
+</div>
+
+        </div>
+    </div>
+  
+  </div>
+  <!-- End Div untuk judul setiap pages -->
+
+  <!-- Batas untuk navbar -->
+  <div class="my-custom-margin"></div>
+
+  </body>
+</html>
