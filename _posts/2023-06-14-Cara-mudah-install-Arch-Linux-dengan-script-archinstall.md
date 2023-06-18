@@ -1,0 +1,33 @@
+---
+title:
+layout: post
+author:
+categories: [Arch Linux, id, archinstall]
+excerpt: "Di postingan kali ini kita akan bahas cara install Arch Linux tanpa manual/cara tradisional seperti yang sering digunakan orang-orang, tetapi kita akan menggunakan cara yang sangat sederhana hanya dengan menggunakan script archinstall kita dapat menghemat waktu untuk instalasinya"
+description: "Di artikel ini kita akan bahas cara install Arch Linux tanpa manual/cara tradisional seperti yang sering digunakan orang-orang, tetapi kita akan menggunakan cara yang sangat sederhana hanya dengan menggunakan script archinstall kita dapat menghemat waktu untuk instalasinya"
+---
+
+Arch Linux adalah salah satu distro linux yang paling populer dan keunggulannya menurut saya adalah [aur](https://wiki.archlinux.org/title/Arch_User_Repository) yang dimilikinya dan kelengkapan dari [wiki](https://wiki.archlinux.org/) nya sendiri, hampir semua hal sudah ada di wikinya mulai dari cara configurasi, instalasi, tips, dan sebagainya menjadi keunggulan dari Arch Linux itu sendiri.
+
+Saya dulu termasuk orang yang sering mencoba beberapa varian dari Linux, disana ada linux mint, LXDE, XFCE, macem-macem lah, dan yang terakhir sampai saat artikel ini ditulis saya jatuh cinta sama **Arch Linux** xD. 
+
+Namun, ada satu kondisi yang membuat saya merasa malas adalah instalasi dari Arch Linux sendiri yang menurut saya **sangat ribet**, banyak hal yang perlu kita configurasi, mulai dari persiapan partisi, format ini itu, set ini itu, yang menurut saya lumayan menyita banyak waktu.
+
+Taklama setelah itu, saya menemukan sebuah cara yang sangat mudah untuk install Arch Linux, tidak perlu manual lagi, yaitu hanya dengan menggunakan script [archinstall](https://github.com/archlinux/archinstall).
+
+Archinstall adalah skrip yang ada dalam distribusi Arch Linux yang bertujuan untuk memudahkan proses instalasi sistem operasi Arch Linux. Skrip ini menyediakan antarmuka yang lebih sederhana dan terstruktur untuk mengatur partisi, menginstal paket-paket, mengatur pengaturan dasar, dan konfigurasi lainnya yang diperlukan saat menginstal Arch Linux.
+
+Dengan menggunakan skrip archinstall, kita dapat melakukan instalasi Arch Linux dengan lebih cepat dan efisien tanpa harus melakukan semua langkah secara manual. Skrip ini menyediakan opsi-opsi yang dapat dikonfigurasi untuk menyesuaikan instalasi sesuai dengan kebutuhan pengguna.
+
+Caranya cukup mudah, ada beberapa hal yang perlu dipastikan sebelum memulai menggunakan *archinstall*
+- **Pertama**, pastikan bahwa kamu telah menyiapkan disk yang akan diinstall Arch Linux nya, <span style="color:red"> *Pada tutorial kali ini kita akan melakukan instalasi fresh ke dalam disk, jadi jika ada data penting di dalam disk, pastikan sudah di backup ya... karena nantinya saat instalasi disk akan di format(jadi data di dalamnya akan dihapus)* </span>
+- **Kedua** Pastikan kamu telah mengunduh dan menyiapkan file ISO Arch Linux yang terbaru. Setelah melakukan booting ke Arch Linux dari media bootable(seperti USB flash drive) yang telah terisi ISO Arch Linux tadi(*untuk cara buatnya bisa dengan **rufus**,**ventoy**, dsb *), kemudian koneksikan ke jaringan internet, bisa wifi seperti menggunakan [iwctl](https://wiki.archlinux.org/title/iwd) atau ethernet. Karena nantinya kita membutuhkan akses internet untuk mendownload package-package yang dibutuhkan saat instalasi, untuk cara lebih lengkapnya teman-teman bisa cari sendiri seperti [disini](https://wiki.archlinux.org/title/iwd), youtube, atau artikel favorite teman-teman.
+
+Setelah dua cara tersebut sudah dilakukan,
+- kita bisa langsung menjalankan perintah **archinstall** di cli arch linux nya.
+
+
+<p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output"></a></p>
+
+
+
