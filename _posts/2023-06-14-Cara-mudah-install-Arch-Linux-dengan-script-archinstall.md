@@ -29,5 +29,7 @@ Setelah dua cara tersebut sudah dilakukan,
 
 <p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output"></a></p>
 
+**Artikel ini Belum siap(in progress)...**
+
 
 
