@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    <title>User,Group dan Hak Akses di Linux | Riparuk Archive</title>
+    <meta name="description" content="Di artikel ini kita akan bahas secara singkat apa itu User, Group dan hubungan dengan Hak Akses di Linux, category: Linux, id">
+  </head>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <body class="bg-light" style="font-family: 'Poppins'; font-size: 22px; ">
+  <!-- Div untuk judul setiap page -->
+  <div class="container rounded mb-6 bg-white border ">
+    <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+    <div class="main-color rounded">
+      <div class="container text-light rounded-top bg-dark">
+        <h1 style="text-align: center;">
+          <a class="text-light none" href="/"><b>Riparuk Archive</b></a>
+        </h1>
+      </div>
+    
+      <div class="container rounded-bottom bg-white ">
+          <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+<p class="h6">21 Jun 2023</p>
+<div style="font-size: 14px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <div class="container bg-light border">
+        <div style="font-size: 6px;">
+    &nbsp;
+  </div>
+        <h4 class="text-dark"><b>User,Group dan Hak Akses di Linux</b></h4>
+        <hr>
+        <p>Penjelasan Singkat tentang User, Group dan Hak Akses</p>
+    </div>
+    <hr>
+        <p>Di sistem operasi Linux, pengguna dan hak akses merupakan salah satu konsep penting yang perlu dipahami. Pengguna merupakan individu atau entitas yang terdaftar di sistem operasi dan memiliki hak akses untuk mengakses atau menggunakan resource yang tersedia. Hak akses ini dapat berupa hak akses untuk menjalankan perintah atau mengakses file atau direktori tertentu.</p>
+
+<p>Ada beberapa jenis pengguna di Linux, di antaranya adalah:</p>
+<ul>
+  <li>Pengguna biasa (normal user) adalah pengguna yang tidak memiliki hak akses superuser atau root. Pengguna biasa hanya dapat mengakses resource yang diberikan oleh sistem operasi atau yang dapat diakses oleh siapa saja.</li>
+  <li>Pengguna superuser atau root adalah pengguna yang memiliki hak akses tertinggi di sistem operasi. Pengguna ini dapat mengakses semua resource yang tersedia di sistem operasi dan memiliki hak akses untuk menjalankan perintah-perintah sistem yang berkaitan dengan konfigurasi atau pengelolaan sistem.</li>
+</ul>
+
+<p>Selain itu, terdapat juga group pengguna di Linux, yaitu kelompok pengguna yang memiliki hak akses yang sama. Group pengguna dapat digunakan untuk mengelompokkan pengguna yang memiliki hak akses yang sama, seperti pengguna yang memiliki hak akses terbatas untuk mengakses file atau pengguna yang memiliki hak akses untuk mengelola server web.</p>
+
+<p>Untuk membuat group pengguna, Anda dapat menggunakan perintah groupadd di terminal. Contohnya:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ groupadd webadmin
+</code></pre></div></div>
+
+<p>Perintah ini akan membuat group pengguna bernama webadmin. Anda juga dapat menambahkan pengguna ke group dengan menggunakan perintah usermod di terminal. Contohnya:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ usermod -aG webadmin user1
+</code></pre></div></div>
+
+<p>Perintah ini akan menambahkan pengguna user1 ke group pengguna webadmin. Jadi setiap file atau perintah dengan hak akses berdasarkan grub tertentu maka user-user didalam grub tersebut bisa akses filenya.</p>
+
+
+</div>
+
+        </div>
+    </div>
+  
+  </div>
+  <!-- End Div untuk judul setiap pages -->
+
+  <!-- Batas untuk navbar -->
+  <div class="my-custom-margin"></div>
+
+  </body>
+</html>

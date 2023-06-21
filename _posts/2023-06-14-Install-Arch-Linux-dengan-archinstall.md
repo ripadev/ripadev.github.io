@@ -26,7 +26,6 @@ Caranya cukup mudah, ada beberapa hal yang perlu dipastikan sebelum memulai meng
 Setelah dua cara tersebut sudah dilakukan,
 - kita bisa langsung menjalankan perintah **archinstall** di cli arch linux nya.
 
-
 <p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output"></a></p>
 
 **Artikel ini Belum siap(in progress)...**
