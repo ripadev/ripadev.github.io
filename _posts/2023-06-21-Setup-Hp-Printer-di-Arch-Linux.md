@@ -15,4 +15,4 @@ Langkah-langkah setup printer HP:
 5. Pasang system-config-printer, alat GUI untuk mengonfigurasi printer.
 6. Mulai system-config-printer dan klik tombol untuk menambahkan printer. Pilih printer Anda dan pilih HPLIP sebagai metode koneksi (lihat tangkapan layar).
 7. Sekarang, system-config-printer seharusnya memungkinkan Anda mencetak halaman uji.
-8. Agar aplikasi GTK seperti Evince, Okular, dsb dapat menampilkan printer Anda dalam dialog pencetakan, Anda perlu juga memasang gtk3-print-backends.
+8. Agar aplikasi GTK seperti Evince, Okular, dsb dapat menampilkan printer Anda dalam dialog pencetakan, Anda perlu juga memasang gtk3.
