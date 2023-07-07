@@ -66,6 +66,12 @@ a.none:hover {
     text-decoration: none;
 }
 
+.doa-awal p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
 // for image size
 @media only screen and (min-width: 992px) {
     .myimg {
