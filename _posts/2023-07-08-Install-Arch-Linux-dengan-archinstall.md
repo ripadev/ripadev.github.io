@@ -28,7 +28,28 @@ Setelah dua cara tersebut sudah dilakukan,
 
 <p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output"></a></p>
 
-**Artikel ini Belum siap(in progress)...**
+- Kemudian atur konfigurasi sesuai preferensi. Preferensi saya biasanya : 
+    - Archinstall language  : **English (100%)**
+    - Keyboard Layout       : **us**
+    - Mirror region         : **[]**
+    - Locale language       : **en_US**
+    - Locale encoding       : **utf-8**
+    - Drive(s)              : Pilih drive yang mau diinstall linux nya
+    - Disk layout           : Wipe all (semua data di dalam drive yang dipilih akan dihapus)
+    - Bootloader            : **systemd-bootctl** atau **GRUB** (bebas sesuai preferensi, saya lebih suka systemd-bootctl)
+    - Hostname              : masukkan hostname(bebas, contoh kalau saya biasanya "arch" saja)
+    - Root password         : None (saya lebih prefer menggunakan sudo)
+    - User account          : Pilih **"Add a user"**, **masukkan username**(bebas, contoh kalau saya "ripa"), **kemudian tekan enter**, **masukkan password**, Should "ripa" be a superuser(sudo)? **pilih yes** dan enter, kemudian **pilih "confirm and exit"**
+    - Profile               : Sesuai preferensi, jika ingin menggunakan KDE desktop maka pilih **desktop->kde**, graphics driver sesuai sama perangkat
+    - Audio                 : Bebas, saya prefer **pipewire**
+    - Kernel                : Bebas, saya biasanya hanya **['linux']**
+    - Additional package    : Bebas, saya biasanya hanya browser seperti chromium
+    - Network configuration : Saya menggunakan **"Use NetworkManager"**
+    - Timezone              : **Asia/Jakarta**
+    - Automatic time sync   : **True**
+    - Optional repositories : biasanya hanya **['multilib]** agar bisa install steam
+    - Setelah semua dikonfiurasi, **pilih "Install"**
+    - Tunggu hingga proses selesai, kemudian **reboot** :)
 
 
 
