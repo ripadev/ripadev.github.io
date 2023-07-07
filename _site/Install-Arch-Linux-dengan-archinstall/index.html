@@ -36,7 +36,7 @@
           <div style="font-size: 6px;">
     &nbsp;
   </div>
-<p class="h6">14 Jun 2023</p>
+<p style="font-size: small;">Last edited 08 Jul 2023</p>
 <div style="font-size: 14px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <div class="container bg-light border">
         <div style="font-size: 6px;">
@@ -47,6 +47,13 @@
         <p>Di postingan kali ini kita akan bahas cara install Arch Linux tanpa manual/cara tradisional seperti yang sering digunakan orang-orang, tetapi kita akan menggunakan cara yang sangat sederhana hanya dengan menggunakan script archinstall kita dapat menghemat waktu untuk instalasinya</p>
     </div>
     <hr>
+        <div class="doa-awal">
+    <p><img class="icon" src="/assets/images/bismillah.svg" alt="بسم الله الرحمن الرحيم" style="height:40px" align="right"></p>
+    <div style="clear:both;"></div>
+    </div>
+        <div style="font-size: 6px;">
+    &nbsp;
+  </div>
         <p>Arch Linux adalah salah satu distro linux yang paling populer dan keunggulannya menurut saya adalah <a href="https://wiki.archlinux.org/title/Arch_User_Repository">aur</a> yang dimilikinya dan kelengkapan dari <a href="https://wiki.archlinux.org/">wiki</a> nya sendiri, hampir semua hal sudah ada di wikinya mulai dari cara configurasi, instalasi, tips, dan sebagainya menjadi keunggulan dari Arch Linux itu sendiri.</p>
 
 <p>Saya dulu termasuk orang yang sering mencoba beberapa varian dari Linux, disana ada linux mint, LXDE, XFCE, macem-macem lah, dan yang terakhir sampai saat artikel ini ditulis saya jatuh cinta sama <strong>Arch Linux</strong> xD.</p>
@@ -72,9 +79,40 @@
 
 <p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output" /></a></p>
 
-<p><strong>Artikel ini Belum siap(in progress)…</strong></p>
+<ul>
+  <li>Kemudian atur konfigurasi sesuai preferensi. Preferensi saya biasanya :
+    <ul>
+      <li>Archinstall language  : <strong>English (100%)</strong></li>
+      <li>Keyboard Layout       : <strong>us</strong></li>
+      <li>Mirror region         : <strong>[]</strong></li>
+      <li>Locale language       : <strong>en_US</strong></li>
+      <li>Locale encoding       : <strong>utf-8</strong></li>
+      <li>Drive(s)              : Pilih drive yang mau diinstall linux nya</li>
+      <li>Disk layout           : Wipe all (semua data di dalam drive yang dipilih akan dihapus)</li>
+      <li>Bootloader            : <strong>systemd-bootctl</strong> atau <strong>GRUB</strong> (bebas sesuai preferensi, saya lebih suka systemd-bootctl)</li>
+      <li>Hostname              : masukkan hostname(bebas, contoh kalau saya biasanya “arch” saja)</li>
+      <li>Root password         : None (saya lebih prefer menggunakan sudo)</li>
+      <li>User account          : Pilih <strong>“Add a user”</strong>, <strong>masukkan username</strong>(bebas, contoh kalau saya “ripa”), <strong>kemudian tekan enter</strong>, <strong>masukkan password</strong>, Should “ripa” be a superuser(sudo)? <strong>pilih yes</strong> dan enter, kemudian <strong>pilih “confirm and exit”</strong></li>
+      <li>Profile               : Sesuai preferensi, jika ingin menggunakan KDE desktop maka pilih <strong>desktop-&gt;kde</strong>, graphics driver sesuai sama perangkat</li>
+      <li>Audio                 : Bebas, saya prefer <strong>pipewire</strong></li>
+      <li>Kernel                : Bebas, saya biasanya hanya <strong>[‘linux’]</strong></li>
+      <li>Additional package    : Bebas, saya biasanya hanya browser seperti chromium</li>
+      <li>Network configuration : Saya menggunakan <strong>“Use NetworkManager”</strong></li>
+      <li>Timezone              : <strong>Asia/Jakarta</strong></li>
+      <li>Automatic time sync   : <strong>True</strong></li>
+      <li>Optional repositories : biasanya hanya <strong>[‘multilib]</strong> agar bisa install steam</li>
+      <li>Setelah semua dikonfiurasi, <strong>pilih “Install”</strong></li>
+      <li>Tunggu hingga proses selesai, kemudian <strong>reboot</strong> :)</li>
+    </ul>
+  </li>
+</ul>
 
 
+
+        Sekian, terimakasih sudah mampir semoga membantu.
+        <div style="font-size: 6px;">
+    &nbsp;
+  </div>
 </div>
 
         </div>
