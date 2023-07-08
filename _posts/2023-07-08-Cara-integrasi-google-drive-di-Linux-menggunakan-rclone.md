@@ -22,19 +22,41 @@ Pertama kita membuat remote google drivenya terlebih dahulu, cara nya
 - Configure this as a Shared Drive (Team Drive)?, saya pilih `n) No`, ketik `n` lalu enter.
 - Configuration complete, Keep this "gdrive-ripa" remote?, jika sudah benar pilih `y) Yes this is OK`, ketik `y` lalu enter.
 - remote "gdrive-ripa" telah dibuat.
-    <p><a href="/assets/images/rcloneRemoteCreated.png"><img src="/assets/images/rcloneRemoteCreated.png" alt="rclone-remote-created"></a></p>
+    ```
+    Current remotes:
+
+    Name                 Type
+    ====                 ====
+    gdrive-ripa          drive
+
+    e) Edit existing remote
+    n) New remote
+    d) Delete remote
+    r) Rename remote
+    c) Copy remote
+    s) Set configuration password
+    q) Quit config
+    e/n/d/r/c/s/q> q
+    ```
+
 - Setelah remote dibuat, kamu bisa keluar konfigurasi, ketik `q` lalu enter atau `ctrl+c`.
 
 
 Agar bisa mengakses remote yang telah dibuat tadi, kita bisa langsung menggunakan mount yang disediakan oleh rclone, 
 - sebelum itu siapkan folder kosong yang ingin digunakan untuk mengakses google drive remote nya, saya melakukan `mkdir ~/Google-Drive` di terminal untuk membuat folder. 
-- Kemudian ketik perintah `rclone mount gdrive-ripa: ~/Google-Drive/` di terminal dan hit enter untuk melakukan mount remote `gdrive-ripa` yang telah dibuat ke folder `~/Google-Drive/` yang juga telah dibuat.
-    <p><a href="/assets/images/rcloneMount.png"><img src="/assets/images/rcloneMount.png" alt="rclone-mount"></a></p>
+- Kemudian ketik perintah seperti berikut
+    ```
+    ripa@arch:[~]$ rclone mount gdrive-ripa: ~/Google-Drive/
+    ``` 
+    di terminal dan hit enter untuk melakukan mount remote `gdrive-ripa` yang telah dibuat ke folder `~/Google-Drive/` yang juga telah dibuat.
 - mount telah berhasil, jangan tutup terminal yang sedang berjalan perintah diatas, karena perintah tersebut tidak berjalan di latar belakang. Kamu bisa cek isi dari folder nya, folder di saya tadi `~/Google-Drive/`.
 - Jika isinya sesuai dengan isi google drive, maka kamu berhasil.
 - Untuk melakukan unmount, kamu bisa menutup terminal atau `ctrl+c` yang sedang berjalan perintah `rclone mount` tersebut.
-- Jika ingin menjalankannya dilatar belakang maka bisa menambahkan `&` di akhir perintah tersebut, seperti `rclone mount gdrive-ripa: ~/Google-Drive/ &`.
-    <p><a href="/assets/images/rcloneRunBackground.png"><img src="/assets/images/rcloneRunBackground.png" alt="rclone-run-background"></a></p>
+- Jika ingin menjalankannya dilatar belakang maka bisa menambahkan `&` di akhir perintah tersebut, seperti
+    ```
+    ripa@arch:[~]$ rclone mount gdrive-ripa: ~/Google-Drive/ &
+    ```
+   
 
 
 

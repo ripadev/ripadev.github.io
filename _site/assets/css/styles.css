@@ -40,6 +40,13 @@
   color: #232831;
 }
 
+pre {
+  background-color: #232831;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+}
+
 .dark-accent {
   background-color: #9E5548;
 }

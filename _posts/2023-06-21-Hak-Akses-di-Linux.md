@@ -17,15 +17,15 @@ Selain itu, terdapat juga group pengguna di Linux, yaitu kelompok pengguna yang 
 
 Untuk membuat group pengguna, Anda dapat menggunakan perintah groupadd di terminal. Contohnya:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 $ groupadd webadmin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 Perintah ini akan membuat group pengguna bernama webadmin. Anda juga dapat menambahkan pengguna ke group dengan menggunakan perintah usermod di terminal. Contohnya:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 $ usermod -aG webadmin user1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 Perintah ini akan menambahkan pengguna user1 ke group pengguna webadmin. Jadi setiap file atau perintah dengan hak akses berdasarkan grub tertentu maka user-user didalam grub tersebut bisa akses filenya.
 

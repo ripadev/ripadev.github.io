@@ -73,7 +73,21 @@
   <li>Configure this as a Shared Drive (Team Drive)?, saya pilih <code class="language-plaintext highlighter-rouge">n) No</code>, ketik <code class="language-plaintext highlighter-rouge">n</code> lalu enter.</li>
   <li>Configuration complete, Keep this “gdrive-ripa” remote?, jika sudah benar pilih <code class="language-plaintext highlighter-rouge">y) Yes this is OK</code>, ketik <code class="language-plaintext highlighter-rouge">y</code> lalu enter.</li>
   <li>remote “gdrive-ripa” telah dibuat.
-    <p><a href="/assets/images/rcloneRemoteCreated.png"><img src="/assets/images/rcloneRemoteCreated.png" alt="rclone-remote-created" /></a></p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Current remotes:
+
+  Name                 Type
+  ====                 ====
+  gdrive-ripa          drive
+
+  e) Edit existing remote
+  n) New remote
+  d) Delete remote
+  r) Rename remote
+  c) Copy remote
+  s) Set configuration password
+  q) Quit config
+  e/n/d/r/c/s/q&gt; q
+</code></pre></div>    </div>
   </li>
   <li>Setelah remote dibuat, kamu bisa keluar konfigurasi, ketik <code class="language-plaintext highlighter-rouge">q</code> lalu enter atau <code class="language-plaintext highlighter-rouge">ctrl+c</code>.</li>
 </ul>
@@ -81,14 +95,17 @@
 <p>Agar bisa mengakses remote yang telah dibuat tadi, kita bisa langsung menggunakan mount yang disediakan oleh rclone,</p>
 <ul>
   <li>sebelum itu siapkan folder kosong yang ingin digunakan untuk mengakses google drive remote nya, saya melakukan <code class="language-plaintext highlighter-rouge">mkdir ~/Google-Drive</code> di terminal untuk membuat folder.</li>
-  <li>Kemudian ketik perintah <code class="language-plaintext highlighter-rouge">rclone mount gdrive-ripa: ~/Google-Drive/</code> di terminal dan hit enter untuk melakukan mount remote <code class="language-plaintext highlighter-rouge">gdrive-ripa</code> yang telah dibuat ke folder <code class="language-plaintext highlighter-rouge">~/Google-Drive/</code> yang juga telah dibuat.
-    <p><a href="/assets/images/rcloneMount.png"><img src="/assets/images/rcloneMount.png" alt="rclone-mount" /></a></p>
+  <li>Kemudian ketik perintah seperti berikut
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ripa@arch:[~]$ rclone mount gdrive-ripa: ~/Google-Drive/
+</code></pre></div>    </div>
+    <p>di terminal dan hit enter untuk melakukan mount remote <code class="language-plaintext highlighter-rouge">gdrive-ripa</code> yang telah dibuat ke folder <code class="language-plaintext highlighter-rouge">~/Google-Drive/</code> yang juga telah dibuat.</p>
   </li>
   <li>mount telah berhasil, jangan tutup terminal yang sedang berjalan perintah diatas, karena perintah tersebut tidak berjalan di latar belakang. Kamu bisa cek isi dari folder nya, folder di saya tadi <code class="language-plaintext highlighter-rouge">~/Google-Drive/</code>.</li>
   <li>Jika isinya sesuai dengan isi google drive, maka kamu berhasil.</li>
   <li>Untuk melakukan unmount, kamu bisa menutup terminal atau <code class="language-plaintext highlighter-rouge">ctrl+c</code> yang sedang berjalan perintah <code class="language-plaintext highlighter-rouge">rclone mount</code> tersebut.</li>
-  <li>Jika ingin menjalankannya dilatar belakang maka bisa menambahkan <code class="language-plaintext highlighter-rouge">&amp;</code> di akhir perintah tersebut, seperti <code class="language-plaintext highlighter-rouge">rclone mount gdrive-ripa: ~/Google-Drive/ &amp;</code>.
-    <p><a href="/assets/images/rcloneRunBackground.png"><img src="/assets/images/rcloneRunBackground.png" alt="rclone-run-background" /></a></p>
+  <li>Jika ingin menjalankannya dilatar belakang maka bisa menambahkan <code class="language-plaintext highlighter-rouge">&amp;</code> di akhir perintah tersebut, seperti
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ripa@arch:[~]$ rclone mount gdrive-ripa: ~/Google-Drive/ &amp;
+</code></pre></div>    </div>
   </li>
 </ul>
 

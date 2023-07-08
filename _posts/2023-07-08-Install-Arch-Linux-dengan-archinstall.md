@@ -26,7 +26,34 @@ Caranya cukup mudah, ada beberapa hal yang perlu dipastikan sebelum memulai meng
 Setelah dua cara tersebut sudah dilakukan,
 - kita bisa langsung menjalankan perintah **archinstall** di cli arch linux nya.
 
-<p><a href="/assets/images/archinstalloutput.png"><img class="myimg" src="/assets/images/archinstalloutput.png" alt="archinstall output"></a></p>
+```
+    Set/Modify the below options
+
+    > Archinstall language               set: English (100%)
+    Keyboard layout                    set: us
+    Mirror region                      set: []
+    Locale language                    set: en_US
+    Locale encoding                    set: utf-8
+    Drive(s)
+    Bootloader                         set: systemd-bootctl
+    Swap                               set: True
+    Hostname                           set: archlinux
+    Root password                      set: None
+    User account
+    Profile                            set: None
+    Audio                              set: None
+    Kernels                            set: ['linux']
+    Additional packages                set: []
+    Network configuration              set: Not configured, unavailable unless setup manually
+    Timezone                           set: UTC
+    Automatic time sync (NTP)          set: True
+    Optional repositories              set: []
+
+    Save configuration
+    Install (2 config(s) missing)
+    Abort
+    (Press "/" to search)
+```
 
 - Kemudian atur konfigurasi sesuai preferensi. Preferensi saya biasanya : 
     - Archinstall language  : **English (100%)**
