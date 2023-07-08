@@ -3,16 +3,16 @@
     <div class="input-group rounded-top bg-light">
       <div class="input-group-prepend">
 
-        <span class="input-group-text border-0 bg-light" ><b>grep ></b></span>
+        <span class="input-group-text border-0 bg-light" >grep ></span>
       </div>
     <input class="form-control border-0 bg-light text-dark" style="outline: none; box-shadow: none;" id="filter-search" type="text" placeholder="Cari disini">
     </div>
 
     <div class="rounded-bottom bg-light">
-        <ul class="list-group" id="filter-list" style="display:none; list-style: none; font-size: large;">
+        <ul class="list-group" id="filter-list" style="display:none; list-style: none;">
             {% for post in site.posts %}
               <li class="filter">
-                <a class="h6 ml-2 main-color-font" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="ml-2 main-color-font" style="font-size: small;" href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endfor %}
         </ul>
